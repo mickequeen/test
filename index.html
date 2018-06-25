@@ -11,14 +11,37 @@
   <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
   <!-- Material Design Bootstrap -->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.5.4/css/mdb.min.css" rel="stylesheet">
+  <!-- css para uso de cortinas -->
+  <link rel="stylesheet" href="assets/css/reset.css">
+  <link rel="stylesheet" href="assets/css/style.css">
   <link rel="stylesheet" href="assets/css/main.css">
+  <script src="assets/js/modernizr.js"></script>
 </head>
-<body>
-  <div id="particle-canvas"></div>
+<body data-hijacking="off" data-animation="scaleDown">
 
+<section class="cd-section visible">
+    <div id="particle-canvas"></div>  
+</section>
+  
 
+  <section class="cd-section">
+    <div>
+      <h2>Section 2</h2>
+    </div>
+  </section>
 
+  <section class="cd-section">
+    <div>
+      <h2>Section 3</h2>
+    </div>
+  </section>
 
+  <nav>
+    <ul class="cd-vertical-nav">
+      <li><a href="#0" class="cd-prev inactive">Next</a></li>
+      <li><a href="#0" class="cd-next">Prev</a></li>
+    </ul>
+  </nav> <!-- .cd-vertical-nav -->
 
 
     <!-- JQuery -->
@@ -30,5 +53,10 @@
     <!-- MDB core JavaScript -->
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.5.4/js/mdb.min.js"></script>
     <script type="text/javascript" src="assets/js/app.js"></script>
+    <!-- js para uso de cortina -->
+
+<script src="assets/js/velocity.min.js"></script>
+<script src="assets/js/velocity.ui.min.js"></script>
+<script src="assets/js/main.js"></script>
   </body>
 </html>
